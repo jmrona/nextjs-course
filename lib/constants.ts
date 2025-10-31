@@ -1,93 +1,98 @@
-export interface Event {
-  id: string
-  title: string
-  description: string
-  date: string
-  time: string
-  location: string
-  image: string
-  category: string
-  attendees?: number
-  price?: string
-}
-
-export const events: Event[] = [
+export const events = [
   {
-    id: '1',
-    title: 'React Summit 2025',
-    description:
-      'The biggest React conference of the year featuring talks from Meta engineers, React core team members, and industry leaders. Learn about React 19, Server Components, and the future of web development.',
-    date: 'November 15-16, 2025',
-    time: '10:00 AM - 6:00 PM',
-    location: 'Amsterdam, Netherlands',
-    image: '/images/event1.png',
-    category: 'Conference',
-    attendees: 2500,
-    price: '€599',
+    slug: "react-conf-2024",
+    image: "/images/event1.png",
+    title: "React Conf 2024",
+    location: "San Francisco, CA",
+    date: "March 15, 2024",
+    time: "9:00 AM - 6:00 PM",
   },
   {
-    id: '2',
-    title: 'AI & Machine Learning Hackathon',
-    description:
-      'Build innovative AI solutions in 48 hours. Connect with fellow developers, compete for $50K in prizes, and get mentorship from OpenAI and Google AI experts.',
-    date: 'December 1-3, 2025',
-    time: '9:00 AM - 5:00 PM',
-    location: 'San Francisco, CA',
-    image: '/images/event2.png',
-    category: 'Hackathon',
-    attendees: 500,
-    price: 'Free',
+    slug: "nextjs-summit",
+    image: "/images/event2.png",
+    title: "Next.js Summit",
+    location: "Austin, TX",
+    date: "April 22, 2024",
+    time: "10:00 AM - 5:00 PM",
   },
   {
-    id: '3',
-    title: 'Next.js Conf',
-    description:
-      'The official Next.js conference by Vercel. Discover the latest Next.js 16 features, performance optimizations, and deployment strategies. Network with the Next.js community.',
-    date: 'November 22, 2025',
-    time: '9:00 AM - 5:00 PM',
-    location: 'San Francisco, CA (Hybrid)',
-    image: '/images/event3.png',
-    category: 'Conference',
-    attendees: 3000,
-    price: 'Free (Virtual)',
+    slug: "javascript-world",
+    image: "/images/event3.png",
+    title: "JavaScript World Conference",
+    location: "New York, NY",
+    date: "May 8, 2024",
+    time: "8:30 AM - 7:00 PM",
   },
   {
-    id: '4',
-    title: 'DevOps & Cloud Native Summit',
-    description:
-      'Master Kubernetes, Docker, CI/CD pipelines, and cloud infrastructure. Hands-on workshops with AWS, Azure, and GCP experts. Perfect for platform engineers and DevOps professionals.',
-    date: 'January 10-12, 2026',
-    time: '9:00 AM - 5:00 PM',
-    location: 'Austin, TX',
-    image: '/images/event4.png',
-    category: 'Conference',
-    attendees: 1800,
-    price: '$799',
+    slug: "ai-hackathon-2024",
+    image: "/images/event4.png",
+    title: "AI Innovation Hackathon",
+    location: "Seattle, WA",
+    date: "June 14-16, 2024",
+    time: "48 Hours",
   },
   {
-    id: '5',
-    title: 'Web3 & Blockchain Developers Meetup',
-    description:
-      'Monthly meetup for blockchain developers. This month: Solidity best practices, smart contract security audits, and building DApps with Ethereum and Solana.',
-    date: 'November 8, 2025',
-    time: '9:00 AM - 5:00 PM',
-    location: 'New York, NY',
-    image: '/images/event5.png',
-    category: 'Meetup',
-    attendees: 150,
-    price: 'Free',
+    slug: "web3-developer-meetup",
+    image: "/images/event5.png",
+    title: "Web3 Developer Meetup",
+    location: "Miami, FL",
+    date: "July 20, 2024",
+    time: "6:00 PM - 9:00 PM",
   },
   {
-    id: '6',
-    title: 'Mobile Dev Conference',
-    description:
-      'Cross-platform development with React Native, Flutter, and native iOS/Android. Learn from top mobile engineers at Airbnb, Uber, and Meta about building scalable mobile apps.',
-    date: 'December 15-17, 2025',
-    time: '9:00 AM - 5:00 PM',
-    location: 'Seattle, WA',
-    image: '/images/event6.png',
-    category: 'Conference',
-    attendees: 1200,
-    price: '$549',
+    slug: "fullstack-conference",
+    image: "/images/event6.png",
+    title: "Full Stack Conference",
+    location: "Denver, CO",
+    date: "August 12, 2024",
+    time: "9:00 AM - 6:00 PM",
   },
-]
+  {
+    slug: "devops-unleashed",
+    image: "/images/event1.png",
+    title: "DevOps Unleashed",
+    location: "Chicago, IL",
+    date: "September 5, 2024",
+    time: "8:00 AM - 5:30 PM",
+  },
+  {
+    slug: "mobile-dev-summit",
+    image: "/images/event2.png",
+    title: "Mobile Development Summit",
+    location: "Los Angeles, CA",
+    date: "October 18, 2024",
+    time: "9:30 AM - 6:00 PM",
+  },
+  {
+    slug: "cybersecurity-conference",
+    image: "/images/event3.png",
+    title: "Cybersecurity Conference",
+    location: "Boston, MA",
+    date: "November 2, 2024",
+    time: "8:00 AM - 7:00 PM",
+  },
+  {
+    slug: "data-science-hackathon",
+    image: "/images/event4.png",
+    title: "Data Science Hackathon",
+    location: "San Diego, CA",
+    date: "December 7-9, 2024",
+    time: "72 Hours",
+  },
+  {
+    slug: "cloud-native-meetup",
+    image: "/images/event5.png",
+    title: "Cloud Native Meetup",
+    location: "Portland, OR",
+    date: "January 15, 2025",
+    time: "6:30 PM - 9:00 PM",
+  },
+  {
+    slug: "frontend-masters",
+    image: "/images/event6.png",
+    title: "Frontend Masters Conference",
+    location: "Nashville, TN",
+    date: "February 28, 2025",
+    time: "9:00 AM - 5:00 PM",
+  },
+];
