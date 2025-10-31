@@ -5,6 +5,14 @@ import nextTs from "eslint-config-next/typescript";
 const eslintConfig = defineConfig([
   ...nextVitals,
   ...nextTs,
+  // Global rule overrides
+  {
+    rules: {
+      // Disable unescaped entities in JSX globally (covers react plugin and core rule names)
+      'react/no-unescaped-entities': 'off',
+      'no-unescaped-entities': 'off',
+    },
+  },
   // Override default ignores of eslint-config-next.
   globalIgnores([
     // Default ignores of eslint-config-next:
